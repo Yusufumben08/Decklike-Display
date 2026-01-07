@@ -13,6 +13,8 @@ Will be made with looks in mind and look aestethically pleasing on a desk.
 
 Alongside the screen, it will have 6 buttons that can be configured to do specific tasks on a pc, like running an app, running a command, setting a setting, etc.. and a rotary encoder for volume on pc if connected. It will be able to run standalone for non pc related stuff.
 
+This project will also most likely not need a PCB.
+
 The files have not been uploaded yet, this will be removed when i do.
 
 
