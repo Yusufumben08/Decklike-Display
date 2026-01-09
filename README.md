@@ -15,10 +15,6 @@ Alongside the screen, it will have 6 buttons that can be configured to do specif
 
 This project will also most likely not need a PCB.
 
-May need to cut on parts of the app because the pi 0 2w has very low ram and prices in my country are taxed to hell so i cant go with a pi 3
-
-The files have not been uploaded yet, this will be removed when i do. Nothing in the repo is final.
-
 
 <h3>Screenshots for stuff: (SUBJECT TO CHANGE)</h3>
 
