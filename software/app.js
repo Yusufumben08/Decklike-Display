@@ -1,8 +1,3 @@
-// Decklike Display — Hyprland-style tiling window manager
-// - Auto-tiles windows to fill available space
-// - Spawnable tile types from preset menu
-// - Master/slave layout: master on left, slaves stacked on right
-
 const STORAGE_KEY = 'deck-layout-tiling';
 let tileTypes = [];
 let tiles = [];
@@ -110,18 +105,18 @@ function retile(){
     tiles[1].w = w;
     tiles[1].h = viewportH - GAP;
   }else{
-    // master/slave: master takes 60% left, slaves stack on 40% right
+    
     const masterW = Math.floor((viewportW - GAP * 2) * 0.6);
     const slaveW = viewportW - masterW - GAP * 3;
     const slaveH = (viewportH - GAP * (tiles.length - 1)) / (tiles.length - 1);
     
-    // Master tile
+
     tiles[0].x = PADDING;
     tiles[0].y = PADDING;
     tiles[0].w = masterW;
     tiles[0].h = viewportH - GAP;
     
-    // Slave tiles (stack on right)
+    
     for(let i = 1; i < tiles.length; i++){
       tiles[i].x = PADDING + masterW + GAP;
       tiles[i].y = PADDING + (i - 1) * (slaveH + GAP);
@@ -440,3 +435,4 @@ async function fetchQuote(tile, textEl, authorEl){
     textEl.textContent = 'Could not load quote';
   }
 }
+
